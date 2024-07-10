@@ -23,6 +23,26 @@ vagrant box add ubuntu ubuntu.box
 vagrant up
 ```
 
+### Custom VM images
+Create the VMs in VirtualBox as you would normally, then run the following commands in a new directory for the VM:
+```
+VBoxManage export <VM-name> <VM-name>.ova
+``
+
+Then create a metadata.json that contains
+```
+{
+  "provider": "virtualbox"
+}
+
+```
+Then create a Vagrantfile, you can use the ones in the existing directories as a reference and run:
+```
+vagrant package --base <vm-name> --output <vm-name>.box --vagrantfile <path-to-your-vagrantfile>
+``
+
+
+
 ### TO-DO:
 - Configure Vagrant to not automatically connect the ubuntu VM to NAT (it should be only connected to the internal network), this can be verified from the VirtualBox settings on that particular VM. Following image shows that the Adapter 1 is NAT and Enabled, this should be Disabled or completely absent after the initialization.
 

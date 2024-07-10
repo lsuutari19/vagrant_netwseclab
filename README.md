@@ -23,7 +23,8 @@ vagrant up
 ```
 
 ### TO-DO:
-- Configure Vagrant to not automatically connect the ubuntu VM to NAT (it should be only connected to the internal network), this can be verified from the VirtualBox settings on that particular VM. Following image shows that the Adapter 1 is NAT and Enabled, this should be Disabled.
+- Configure Vagrant to not automatically connect the ubuntu VM to NAT (it should be only connected to the internal network), this can be verified from the VirtualBox settings on that particular VM. Following image shows that the Adapter 1 is NAT and Enabled, this should be Disabled or completely absent after the initialization.
+
 ![image](https://github.com/lsuutari19/vagrant_netwseclab/assets/55877405/ca84bf4d-e3b8-4c61-ae03-b5431e83c826)
 - Verify that the tasks in the 2024 Terraform version of the course still work with the Vagrant version
 - Test the performance on university laboratory

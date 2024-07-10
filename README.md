@@ -22,12 +22,14 @@ Requires:
 
 2. Go into pfSense folder and run 
 ```
+vagrant init
 vagrant box add pfSense pfSense.box
 vagrant up
 ```
 
 3. Go into pfSense folder and run 
 ```
+vagrant init
 vagrant box add ubuntu ubuntu.box
 vagrant up
 ```
@@ -48,7 +50,8 @@ Then create a metadata.json that contains
 Then create a Vagrantfile, you can use the ones in the existing directories as a reference and run:
 ```
 vagrant package --base <vm-name> --output <vm-name>.box
-```   
+```
+Now you can follow the default instructions above to launch the Vagrant boxes.
 
 
 

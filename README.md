@@ -11,7 +11,7 @@ Requires:
 - Git LFS
 
 ### Initialization:
-1. Download the following images and move them to their respective folders:
+1. Download the following vagrang boxes and move them to their respective folders:
 
 
 | NAME | LINK | SIZE |
@@ -32,7 +32,7 @@ vagrant box add ubuntu ubuntu.box
 vagrant up
 ```
 
-### Custom VM images
+### Custom vagrant boxes from VMs
 Create the VMs in VirtualBox as you would normally, then run the following commands in a new directory for the VM:
 ```
 VBoxManage export <VM-name> -o <VM-name>.ova

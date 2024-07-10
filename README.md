@@ -8,7 +8,6 @@ The Terraform version can be found at https://github.com/lsuutari19/network_sec_
 Requires:
 - VirtualBox
 - Vagrant
-- Git LFS
 
 ### Initialization:
 1. Download the following vagrang boxes and move them to their respective folders:
@@ -16,9 +15,9 @@ Requires:
 
 | NAME | LINK | SIZE |
 |------|------|------|
-| pfSense     |  [Download]()    | 558.9MB     |
-|  Ubuntu    | [Download]()     | 1.1GB     |
-|  Kali    | [Download]()     |  very big    |
+| pfSense     |  [Download](https://drive.google.com/file/d/1odDI6BPAi3Lw0rg6NuHUI54DwiM-7Fbx/view?usp=drive_link)    | 558.9MB     |
+|  Ubuntu    | [Download](https://drive.google.com/file/d/1Gdmc0gv7fUG19f9UyoCqm9icKnY_61Ru/view?usp=drive_link)     | 1.1GB     |
+|  Kali    | [Download](https://cdimage.kali.org/kali-2024.2/kali-linux-2024.2-virtualbox-amd64.7z)     |  very big    |
 
 2. Go into pfSense folder and run 
 ```

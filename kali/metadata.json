@@ -1,0 +1,6 @@
+{
+  "name": "vagrant-pfSense",
+  "description": "pfSense firewall VM for deployment with vagrant in the Cloud and Network Security course at University of Oulu",
+  "provider": "virtualbox"
+}
+

@@ -27,7 +27,7 @@ vagrant up
 Create the VMs in VirtualBox as you would normally, then run the following commands in a new directory for the VM:
 ```
 VBoxManage export <VM-name> <VM-name>.ova
-``
+```  
 
 Then create a metadata.json that contains
 ```
@@ -39,7 +39,7 @@ Then create a metadata.json that contains
 Then create a Vagrantfile, you can use the ones in the existing directories as a reference and run:
 ```
 vagrant package --base <vm-name> --output <vm-name>.box --vagrantfile <path-to-your-vagrantfile>
-``
+```   
 
 
 

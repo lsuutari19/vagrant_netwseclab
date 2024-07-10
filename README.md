@@ -16,9 +16,9 @@ Requires:
 
 | NAME | LINK | SIZE |
 |------|------|------|
-| pfSense     |  [Download](https://drive.google.com/file/d/1odDI6BPAi3Lw0rg6NuHUI54DwiM-7Fbx/view?usp=sharing)    | 558.9MB     |
-|      |      |      |
-|      |      |      |
+| pfSense     |  [Download]()    | 558.9MB     |
+|  Ubuntu    | [Download]()     | 1.1GB     |
+|  Kali    | [Download]()     |  very big    |
 
 2. Go into pfSense folder and run 
 ```

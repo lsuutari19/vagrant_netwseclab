@@ -12,14 +12,14 @@ Vagrant
 ### Initialization:
 1. Go into pfSense folder and run 
 ```
-    vagrant box add pfSense pfSense.box
-    vagrant up
+vagrant box add pfSense pfSense.box
+vagrant up
 ```
 
 2. Go into pfSense folder and run 
 ```
-    vagrant box add ubuntu ubuntu.box
-    vagrant up
+vagrant box add ubuntu ubuntu.box
+vagrant up
 ```
 
 ### TO-DO:

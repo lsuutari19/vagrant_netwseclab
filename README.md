@@ -21,14 +21,12 @@ Requires:
 
 2. Go into pfSense folder and run 
 ```
-vagrant init
 vagrant box add pfSense pfSense.box
 vagrant up
 ```
 
 3. Go into pfSense folder and run 
 ```
-vagrant init
 vagrant box add ubuntu ubuntu.box
 vagrant up
 ```

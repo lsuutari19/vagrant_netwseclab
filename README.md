@@ -1,13 +1,14 @@
 ### About:
-This repository contains the barebones version of the network security platform, but instead of using Terraform, this uses vagrant to initialize and configure the virtual machines.
+This repository contains the barebones version of the network security platform, but instead of using Terraform, this uses Vagrant to initialize and configure the virtual machines.
 Kali Linux has also been omitted from this version, students are expected to use the host machine to complete the tasks that were previously done on the Kali machine.
 
 This is highly W.I.P. and as it stands is just to see how the initialization/configuration process compares to the Terraform version.
 The Terraform version can be found at https://github.com/lsuutari19/network_sec_platform
 
 Requires:
-VirtualBox
-Vagrant
+- VirtualBox
+- Vagrant
+- Git LFS
 
 ### Initialization:
 1. Go into pfSense folder and run 

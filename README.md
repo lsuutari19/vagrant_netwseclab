@@ -11,13 +11,22 @@ Requires:
 - Git LFS
 
 ### Initialization:
-1. Go into pfSense folder and run 
+1. Download the following images and move them to their respective folders:
+
+
+| NAME | LINK | SIZE |
+|------|------|------|
+| pfSense     |  [Download](https://drive.google.com/file/d/1odDI6BPAi3Lw0rg6NuHUI54DwiM-7Fbx/view?usp=sharing)    | 558.9MB     |
+|      |      |      |
+|      |      |      |
+
+2. Go into pfSense folder and run 
 ```
 vagrant box add pfSense pfSense.box
 vagrant up
 ```
 
-2. Go into pfSense folder and run 
+3. Go into pfSense folder and run 
 ```
 vagrant box add ubuntu ubuntu.box
 vagrant up

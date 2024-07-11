@@ -5,6 +5,17 @@ Vagrant.configure("2") do |config|
   # https://docs.vagrantup.com.
 
   config.vm.box = "ubuntu"
+
+  config.vm.provision "shell", inline: <<-SHELL
+    sudo iptables -F
+    sudo iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+    sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+    sudo iptables -P INPUT DROP
+    sudo iptables -P FORWARD DROP
+    sudo iptables -A OUTPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+    sudo iptables -P OUTPUT DROP
+  SHELL
+
   
   config.vm.network "private_network", type: 'dhcp',
     virtualbox__intnet: true

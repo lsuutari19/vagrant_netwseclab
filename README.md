@@ -1,5 +1,6 @@
 ### About:
 This repository contains the barebones version of the network security platform, but instead of using Terraform, this uses Vagrant to initialize and configure the virtual machines.
+In addition to this it uses the VirtualBox as the virtualization technology instead of QEMU and KVM.
 Kali Linux has also been omitted from this version, students are expected to use the host machine to complete the tasks that were previously done on the Kali machine.
 
 This is highly W.I.P. and as it stands is just to see how the initialization/configuration process and performance compares to the Terraform version.

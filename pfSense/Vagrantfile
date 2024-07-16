@@ -5,6 +5,11 @@ Vagrant.configure("2") do |config|
   # https://docs.vagrantup.com.
 
   config.vm.box = "pfSense"
+
+  config.vm.provider "virtualbox" do |v|
+    v.cpus = 2
+    v.memory = 2048
+  end
   
   config.vm.network "private_network", type: 'dhcp',
     virtualbox__intnet: true

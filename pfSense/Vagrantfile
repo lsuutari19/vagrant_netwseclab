@@ -1,17 +1,12 @@
-
 Vagrant.configure("2") do |config|
-  # The most common configuration options are documented and commented below.
-  # For a complete reference, please see the online documentation at
-  # https://docs.vagrantup.com.
-
   config.vm.box = "pfSense"
 
+  # pfSense requires two virtual CPUs to function
   config.vm.provider "virtualbox" do |v|
     v.cpus = 2
     v.memory = 2048
   end
-  
-  config.vm.network "private_network", type: 'dhcp',
-    virtualbox__intnet: true
+
+  config.vm.network "private_network", type: 'dhcp', virtualbox__intnet: true
 
 end

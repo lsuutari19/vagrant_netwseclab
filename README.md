@@ -52,15 +52,26 @@ vagrant package --base <vm-name> --output <vm-name>.box
 Now you can follow the default instructions above to launch the Vagrant boxes.
 
 
+### Nested Virtualization
+
+#### Linux Host
+TO-DO
+
+#### Windows Host
+Enable SVM on AMD CPU's (or Intel's equivalent) from the BIOS and disabling the following Windows services:
+-Windows Hyper-V hypervisor
+-Device Guard
+-Credential Guard
+
+You know that you have everything correct if when you create the first layer VM, the "Enable Nested VT-x/AMD-V" option is choosable:
+![image](https://github.com/user-attachments/assets/93bbbb5c-b84e-410e-8f56-66f25cae5682)
+
+
 
 ### TO-DO:
-- Configure Vagrant to not automatically connect the ubuntu VM to NAT (it should be only connected to the internal network), this can be verified from the VirtualBox settings on that particular VM. Following image shows that the Adapter 1 is NAT and Enabled, this should be Disabled or completely absent after the initialization.
-
-![image](https://github.com/lsuutari19/vagrant_netwseclab/assets/55877405/ca84bf4d-e3b8-4c61-ae03-b5431e83c826)
-- Make sure the network-up.service in /etc/systemd/system/network-up.service works on the Vagrant network
+- Make sure the network-up.service in the Ubuntu VM in /etc/systemd/system/network-up.service works on the Vagrant network
 ![image](https://github.com/lsuutari19/vagrant_netwseclab/assets/55877405/520628fc-7048-4c9a-96fb-a12c4d3676b9)
 
 - Verify that the tasks in the 2024 Terraform version of the course still work with the Vagrant version
-- Test the performance on university laboratory
-- Test the performance on native Windows
+- Test the performance on university laboratory (Not doable currently as running this VirtualBox in VirtualBox solution requires Administrator permissions to get the VirtualBox nested virtualization technology enabled)
 - Create a script that does the initialization in one step
